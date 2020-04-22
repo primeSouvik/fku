@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        function myFunction() {
+                if (document.getElementById("myCheck").checked == true) {
+                    $('#my').fadeIn(1000);
+                } else {
+                    $('#my').fadeOut(1000);
+                }
+            }
+    </script>
+    <style>
+        #my{
+            text-align: center;
+            margin-top: 25%;
+            font-size: 200px;
+        }
+        #myb{
+            text-align: center;
+            margin-top: 10%;
+            font-size: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myb">
+        <label class="switch">
+            <input type="checkbox" id="myCheck" class="switch" onclick="myFunction()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div id="my" style="display: none;">F*CK YOU</div>
+    
+
+</body>
+
+</html>
