@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Created by Souvik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <script>
+        $(document).ready(function () {
+                $("#myb").click(function () {
+                    $(this).hide();
+                    $('#my').fadeIn(1000);
+                });
+            });
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container demo">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <h1 id="myb" class="main-title"><span class="thin">Click</span> me</h1>
+                <h1 id="my" class="main-title" style="display: none;"><span class="thin">f*ck</span> you</h1>    
+            </div>
+        </div>
+    </div>
+
+</body>
+    <footer>
+        <p style=" position: absolute;bottom: 8px;right: 16px;font-size: 20px;">created by Souvik</p>
+    </footer>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+</html>
