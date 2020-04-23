@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <title>Created by Souvik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
     <script>
         $(document).ready(function () {
-            $("button").click(function () {
-              $("#my").fadeIn(1000);
-              $('#myb').hide();
+                $("#myb").click(function () {
+                    $(this).hide();
+                    $('#my').fadeIn(1000);
+                });
             });
-          });
     </script>
     <style>
-        #my{
-            text-align: center;
-            margin-top: 25%;
-            font-size: 200px;
-        }
-        #myb{
-            text-align: center;
-            margin-top: 22%;
-        }
+
     </style>
 </head>
 
 <body>
-    <div id="myb">
-      <button type="button" class="btn btn-dark btn-lg">Click me</button>
+
+    <div class="container demo">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <h1 id="myb" class="main-title"><span class="thin">Click</span> me</h1>
+                <h1 id="my" class="main-title" style="display: none;"><span class="thin">fuck</span> you</h1>    
+            </div>
+        </div>
     </div>
-    <div id="my" style="display: none;">F*CK YOU</div>   
-    
 
 </body>
     <footer>
         <p style=" position: absolute;bottom: 8px;right: 16px;font-size: 20px;">created by Souvik</p>
     </footer>
-
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
 </html>
